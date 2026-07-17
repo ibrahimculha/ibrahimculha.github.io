@@ -1,94 +1,96 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>İbrahim ÇULHA</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İbrahim Çulha | IC Designer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{--bg:#24252A;--gold:#DCC690;--text:#F5F5F5}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;overflow-x:hidden}
+.cursor-light{position:fixed;width:400px;height:400px;border-radius:50%;
+background:radial-gradient(circle,rgba(220,198,144,.14),transparent 70%);
+pointer-events:none;transform:translate(-50%,-50%);z-index:0}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;position:relative}
+.hero>*{position:relative;z-index:2}
+.logo-wrap{position:relative}
+.logo-wrap:before{content:'';position:absolute;inset:-60px;background:radial-gradient(circle,rgba(220,198,144,.18),transparent 70%);filter:blur(40px)}
+.logo{width:min(420px,80vw);position:relative;z-index:2;animation:appear 2s ease}
+@keyframes appear{from{opacity:0;transform:translateY(30px) scale(.9)}to{opacity:1}}
+h1{color:var(--gold);letter-spacing:5px;margin-top:25px;font-size:clamp(2rem,5vw,4rem)}
+.subtitle{color:#bdbdbd;margin-top:10px}
+.social{display:flex;gap:14px;justify-content:center;margin-top:35px}
+.social a{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+border:1px solid rgba(220,198,144,.25);color:var(--gold);text-decoration:none;transition:.3s}
+.social a:hover{background:var(--gold);color:var(--bg);transform:translateY(-5px)}
+.section{max-width:1100px;margin:auto;padding:90px 20px}
+.glass{background:rgba(255,255,255,.03);border:1px solid rgba(220,198,144,.12);
+backdrop-filter:blur(12px);padding:40px;border-radius:28px}
+.title{color:var(--gold);margin-bottom:20px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.skill{padding:25px;border-radius:20px;background:rgba(255,255,255,.03);border:1px solid rgba(220,198,144,.12);transition:.3s}
+.skill:hover{transform:translateY(-8px);box-shadow:0 0 30px rgba(220,198,144,.12)}
+.whatsapp{position:fixed;right:25px;bottom:25px;width:62px;height:62px;border-radius:50%;background:#25D366;color:#fff;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:28px;z-index:9}
+.particle{position:fixed;width:2px;height:2px;background:var(--gold);border-radius:50%;opacity:.35;animation:float linear infinite}
+@keyframes float{from{transform:translateY(110vh)}to{transform:translateY(-10vh)}}
+</style>
+</head>
+<body>
+<div class="cursor-light"></div>
+<div id="particles"></div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<section class="hero">
+<div>
+<div class="logo-wrap">
+<object class="logo" data="yeni logo.svg" type="image/svg+xml"></object>
+</div>
+<h1>İBRAHİM ÇULHA</h1>
+<p class="subtitle">Web Developer • UI Designer • Digital Creator</p>
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/deneme.jpg" alt="" /></span>
-							<h1>İbrahim ÇULHA</h1>
-							<p>Social Media</p>
-						</header>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field">
-									<input type="text" name="name" id="name" placeholder="Name" />
-								</div>
-								<div class="field">
-									<input type="email" name="email" id="email" placeholder="Email" />
-								</div>
-								<div class="field">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-								<div class="field">
-									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-								</div>
-								<div class="field">
-									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-								</div>
-								<div class="field">
-									<label>But are you a robot?</label>
-									<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-									<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-								</div>
-							</div>
-							<ul class="actions special">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						<footer>
-							<ul class="icons">
-								<li><a href="https://twitter.com/_ibrahimculha_" class="icon brands fa-twitter">Twitter</a></li>
-								<li><a href="https://www.instagram.com/_ibrahimculha_/" class="icon brands fa-instagram">Instagram</a></li>
-								<li><a href="https://www.facebook.com/ibrahim.culha55" class="icon brands fa-facebook-f">Facebook</a></li>
-							</ul>
-						</footer>
-					</section>
+<div class="social">
+<a href="">https://github.com/ibrahimculha/ibrahimculha.github.io<i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="https://www.instagram.com/ibrahimculha.io/"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/ibrahim.culha55/"><i class="fab fa-facebook-f"></i></a>
+</div>
+</div>
+</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; İbrahim ÇULHA</li>
-							<li>BLOG <a href="http://blog.ibrahimculha.com">ZİYARET ET</a></li>
+<section class="section">
+<div class="glass">
+<h2 class="title">Hakkımda</h2>
+<p>Modern web teknolojileri, kullanıcı deneyimi ve dijital tasarım üzerine çalışan geliştirici. Estetik ve performansı bir araya getiren projeler üretmeyi seviyorum.</p>
+</div>
+</section>
 
+<section class="section">
+<h2 class="title">Uzmanlık Alanları</h2>
+<div class="skills">
+<div class="skill"><h3>Frontend</h3><p>HTML • CSS • JavaScript • React</p></div>
+<div class="skill"><h3>Backend</h3><p>PHP • Node.js • MySQL</p></div>
+<div class="skill"><h3>UI / UX</h3><p>Figma • Design Systems • Prototyping</p></div>
+</div>
+</section>
 
-						</ul>
-					</footer>
+<a class="whatsapp" href="https://wa.me/905551234567"><i class="fab fa-whatsapp"></i></a>
 
-			</div>
+<script>
+const light=document.querySelector('.cursor-light');
+document.addEventListener('mousemove',e=>{
+ light.style.left=e.clientX+'px';
+ light.style.top=e.clientY+'px';
+});
 
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+const p=document.getElementById('particles');
+for(let i=0;i<50;i++){
+ let s=document.createElement('span');
+ s.className='particle';
+ s.style.left=Math.random()*100+'vw';
+ s.style.animationDuration=(8+Math.random()*12)+'s';
+ s.style.animationDelay=Math.random()*8+'s';
+ p.appendChild(s);
+}
+</script>
+</body>
 </html>
