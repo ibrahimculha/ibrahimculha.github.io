@@ -45,10 +45,26 @@ body{
  padding:40px;
 }
 .logo{
- width:260px;
- max-width:80%;
- filter:drop-shadow(0 0 25px rgba(220,198,144,.25));
- transition:.4s;
+    width:min(300px,70vw);
+    aspect-ratio:1/1;
+
+    object-fit:contain;
+
+    display:block;
+    margin:0 auto;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    filter:drop-shadow(0 0 25px rgba(220,198,144,.25));
+
+    transition:.4s;
+}
+
+.logo:hover{
+    transform:scale(1.05);
+}
 }
 .logo:hover{
  transform:scale(1.05);
